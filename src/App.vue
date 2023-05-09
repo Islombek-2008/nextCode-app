@@ -117,7 +117,7 @@
 					</a>
 				</div>
 				<div class="portfel-card">
-					<p>nextCode maktabi</p>
+					<p>nextCode {{ maktab }}</p>
 					<a href="https://nextcode-school.netlify.app/">
 						<img src="./assets/Screenshot_2.png" alt="next code school" />
 					</a>
@@ -144,6 +144,7 @@ export default {
 			mavzu: "mavzu",
 			Portfel: "Portfel",
 			menuBar: false,
+			maktab: "maktab",
 		};
 	},
 	methods: {
@@ -164,6 +165,7 @@ export default {
 			this.til1 = "язык:";
 			this.mavzu = "тема";
 			this.Portfel = "Портфолио";
+			this.maktab = "школа";
 		},
 		oz() {
 			this.til = "o'z";
@@ -172,6 +174,7 @@ export default {
 			this.til1 = "til:";
 			this.mavzu = "mavzu";
 			this.Portfel = "Portfel";
+			this.maktab = "msktab";
 		},
 		ing() {
 			this.til = "ing";
@@ -180,6 +183,7 @@ export default {
 			this.til1 = "language:";
 			this.mavzu = "theme";
 			this.Portfel = "Portfolio";
+			this.maktab = "school";
 		},
 		menuOpen() {
 			this.menuBar = !this.menuBar;
@@ -347,6 +351,9 @@ img {
 	}
 }
 @media (max-width: 587px) {
+	img {
+		width: 350px;
+	}
 	.logo {
 		font-size: 19px;
 	}
